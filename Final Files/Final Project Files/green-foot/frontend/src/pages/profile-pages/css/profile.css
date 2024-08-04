@@ -1,0 +1,118 @@
+#profilepage nav{
+  background-color: cadetblue;
+  width: 100%;
+  font-size: 4vh;
+  height: min(9.5vh, 9.5vw);
+}
+#profilepage li{
+  list-style: none;
+}
+#profilepage .icon{
+  border-radius: 50%;
+  display: inline-block;
+  background-color: gray;
+}
+#profilepage #smalltop{
+  height: min(8vh, 8vw);
+  width: min(8vh, 8vw);
+  padding-top: min(1.75vh, 1.75vw);
+  text-align: center;
+  margin: auto;
+  position: relative;
+  font-size: min(3vh,3vw);
+}
+#profilepage #biginfo{
+  margin: auto;
+  height: 46vh;
+  width: 100%;
+  background-color: #403D39;
+  text-align: center;
+  padding-top: min(4vh, 4vw);
+  border-bottom: 1px solid #252422;
+  color: white;
+}
+#profilepage #bigmiddle{
+  height: min(25vh, 25vw);
+  width: min(25vh, 25vw);
+  font-size: min(17vh, 17vw);
+  margin-bottom: min(4vh, 4vw);
+}
+#profilepage #moreinfo{
+  width: 100%;
+  height: min(48.25vh, 48.25vw);
+  float: right;
+  background-color: #fff;
+}
+#profilepage #moreleft{
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2vh;
+  height: min(25vh, 25vw);
+  float: left;
+  color: #252422;
+  padding-left: 0;
+}
+#profilepage #moreleft li{
+  margin-top: 4vh;
+  min-height: 30vh;
+  border-radius: 10px;
+  /* margin-left: 2em; */
+  background-color: #FFFCF2;
+  border: 1px solid #403D39;
+}
+
+#profilepage #moreleft li p {
+  margin-left: 1em;
+}
+
+#profilepage #moreright{
+  min-width: 36%;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 6vh;
+  /* height: min(25vh, 25vw); */
+  float: right;
+  border-radius: 10px;
+  color: white;
+  background-color: #403D39;
+  border: 1px solid #403D39;
+  text-align: center;
+}
+
+#profilepage #moreright ul {
+  padding: 0px 0px 0px 0px;
+  text-align: left;
+}
+
+#profilepage #moreright li {
+  padding: 0px 0px 0px 0px;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: left;
+  border-radius: 10px;
+  background-color: #403D39;
+  color: white;
+  margin-bottom: 1em;
+}
+
+#profilepage .card {
+  background-color: #FFFCF2;
+  color: black;
+}
+
+#profilepage .btn {
+  margin-left: 3px;
+  background-color: #EB5E28;
+  border-color: #EB5E28
+}
+
+#profilepage #verifyform{
+  display: none;
+  margin-top: 20%;
+  text-align: center;
+}
+
+#profilepage #verify{
+  text-align: left;
+}

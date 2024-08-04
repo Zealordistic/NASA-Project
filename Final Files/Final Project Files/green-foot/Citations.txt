@@ -1,0 +1,60 @@
+Citations of resources used:
+=======================================================================================================================================================================================
+
+https://github.com/topojson/topojson
+
+https://geojson.org/
+
+https://jscharting.com/examples/chart-types/geographic-map/
+
+https://stackoverflow.com/questions/31617845/how-to-select-rows-in-a-dataframe-between-two-values-in-python-pandas
+
+https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html 
+
+https://www.geeksforgeeks.org/convert-csv-to-pandas-dataframe/
+
+https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_json.html
+
+https://www.geeksforgeeks.org/convert-csv-to-pandas-dataframe/
+
+https://stackoverflow.com/questions/31617845/how-to-select-rows-in-a-dataframe-between-two-values-in-python-pandas
+
+https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_json.html
+
+https://medium.com/@ivan.ha/using-d3-js-to-plot-an-interactive-map-34fbea76bd78
+
+https://mappingwithd3.com/
+
+https://github.com/scdoshi/us-geojson
+
+https://d3js.org/us-10m.v2.json%27
+
+https://stackoverflow.com/questions/32278840/given-latitude-and-longitude-plotting-points-on-d3-geo-projection
+
+https://htmlcolorcodes.com/color-picker/
+
+https://www.npmjs.com/package/d3-color-legend
+
+https://disc.gsfc.nasa.gov/datasets/GPM_3IMERGDF_06/summary?keywords=gpm
+
+https://observablehq.com/@d3/color-legend
+
+https://www.mongodb.com/docs/manual/tutorial/query-arrays/#:~:text=To%20query%20if%20the%20array,value%3E%20is%20the%20element%20value.&text=To%20specify%20conditions%20on%20the,%3E%2C%20...%20%7D%20%7D
+
+https://www.npmjs.com/package/sfcookies
+
+
+Citations of packages used:
+=======================================================================================================================================================================================
+
+Packages: d3, pandas, topojson, xarray, jsonexport
+
+D3: https://d3js.org/
+
+pandas: https://pandas.pydata.org/
+
+topojson: https://www.npmjs.com/package/topojson
+
+xarray: https://docs.xarray.dev/en/stable/
+
+jsonexport: https://www.npmjs.com/package/jsonexport

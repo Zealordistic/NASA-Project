@@ -1,0 +1,39 @@
+#updatempage body{
+  background: -webkit-linear-gradient(left, #ccc5b9, #403d39);
+}
+#updatempage input{ 
+  height: min(8vh,8vw);
+  margin: min(2vh,2vw);
+  width: 30vw;
+  font-size: min(2vh,2vw);
+}
+#updatempage label{
+  text-align: center;
+  font-size: min(2.7vh,2.7vw);
+  color: black;
+}
+#updatempage .pbuttons{
+  height: min(4vh,4vw);
+  width: 8%;
+  border-style: none;
+}
+#updatempage .divform{
+  width: 80vw;
+  padding-left: 20vw;
+  align-items: center;
+  font-size: min(2vh,2vw);
+}
+#updatempage #updatemail{
+  width: 100%;
+  text-align: center;
+  height: calc(100vh - 56px);
+  background-color: #FFFCF2;
+  /* min-height: min(20vh,20vw); */
+  padding-top: min(20vh,20vw);
+}
+#updatempage #psubmit{
+  margin-right: 2%;
+}
+#updatempage #pback{
+  margin-left: 2%;
+}

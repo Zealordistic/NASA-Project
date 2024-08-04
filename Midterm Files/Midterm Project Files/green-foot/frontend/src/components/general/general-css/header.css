@@ -1,0 +1,14 @@
+:root {
+    --header-color: #403D39;
+    --header-font-color: #d4a373;
+}
+
+#header {
+    background-color: var(--header-color);
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 5em;
+    color: white;
+}

@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+  }
+  
+  #root {
+    width: 100vw;
+    background-color: var(--background-color);
+}
+
+  .home,
+  .results{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    font-size: 3rem;
+  }
+  
+  
+  .results {
+    flex-direction: column;
+    color: #fff;
+    font-size: 100px;
+  }
+  
+
+  

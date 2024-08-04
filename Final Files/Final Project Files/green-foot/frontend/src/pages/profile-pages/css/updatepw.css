@@ -1,0 +1,49 @@
+#updatepwpage body{
+  background: -webkit-linear-gradient(left, #ccc5b9, #403d39);
+}
+#updatepwpage input{
+  height: min(8vh,8vw);
+  margin: min(2vh,2vw);
+  width: 30vw;
+  font-size: min(2vh,2vw);
+}
+#updatepwpage label{
+  text-align: center;
+  font-size: min(2.7vh,2.7vw);
+  color: black;
+}
+#updatepwpage .pbuttons{
+  height: min(4vh,4vw);
+  width: 8%;
+  border-style: none;
+}
+#updatepwpage .divform{
+  width: 80vw;
+  padding-left: 20vw;
+  align-items: center;
+  font-size: min(2vh,2vw);
+}
+#updatepwpage #updatepasswd{
+  width: 100%;
+  text-align: center;
+  min-height: calc(100vh - 56px);
+  padding-top: min(20vh,20vw);
+  background-color: #FFFCF2;
+}
+#updatepwpage #npasswordlbl{
+  font-size: min(2.7vh,2.7vw);
+}
+#updatepwpage #psubmit{
+  margin-right: 2%;
+}
+#updatepwpage #pback{
+  margin-left: 2%;
+}
+
+#updatepasswd .btn {
+  text-align: center;
+  width: 5em !important;
+  border-radius: 10px !important;
+  height: 2.5em !important;
+  margin-right: 2em;
+}

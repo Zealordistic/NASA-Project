@@ -1,0 +1,77 @@
++==========================================================================================================================================================================================+
+Below are the endpoints we created for our API that permits the users to make searches, filter data, save their results and so much more! It also allows users to create an account and 
+log in with their credentials for privileged actions, all of which were made possible by 2 databases:
+
+One of the database stores account/login information. It stores the user's first and last name, along with email, username, and password. The users' passwords are hashed for security 
+purposes. Additionally, the bio field represents information used for users' favicon/avatar, and their saved searches represented as an initially empty array upon account creation.
+The endpoints needed for all account operations on user's profile are split into user operations(previleged operation) and public operations:
+
+User Operations - (Available to users already logged in)
+  --> <PUT> changePassword[req.params.username, req.body = {oldpassword, newpassword}]
+  allows users to change a specific field (password) to a new password
+
+  --> <PUT> changeEmail[req.params.username, req.body = {oldemail, newemail, password}] 
+  allows users to change a specific field (email) to a new email
+
+  --> <PUT> removeSearch[req.params.username, req.body = {index}]
+  allows users to delete a saved search by index
+
+  --> <PUT> clearSearches[req.params.username]
+  allows users to clear their SavedSearches array
+
+  --> <DELETE> deleteAccount[req.params.username, req.body = {password}]
+  allows users to delete their account entirely after verifying with their password 
+
+Public Operations - (Available to everyone)
+  --> <POST> createAccount[req.body = {Firstname, Lastname, Email, username, password}]
+  allows a new user to create an account with their first name, last name, email, username, and password
+
+  --> <PUT> normalLogin[req.body = {username, password}]
+  allows existing users to login with credentials to obtain permission for previleged actions
+
+The other database stores users's results and saved searches data. This database is organized into 5 different collections: gf-power-plants, gf-precipitation, gf-reduced-percip, gf-users, 
+& login-profileinfo. gf-power-plants holds information about power plant data and gf-reduced-percip holds information about the reduced percipitation data. They are both in GeoJSON format
+containing an id, a type, geometry which is a point and has two coordinates for the latitude and longitude, properties which holds all other data about this object. login-profileinfo
+holds information about the users, their data, password (which are hashed), and the user's saved searches which are linked to their account. The endpoints for this database are listed 
+below:
+
+  --> <GET> getPowerPlantData[req.query]
+  queries and returns powerplant data in JSON format
+
+  --> <GET> getPrecipitationPoints[]
+  gets all precipitation data points and returns it in JSON format
+
+  --> <POST> insertPowerPlantData[]
+  inserting powerplant data into the array 
+
+  --> <POST> addSaveSearch[req.body = {user query}]
+  save an unique search to the user's account after the user clicks the "save search" button
+
+  --> <DELETE> deleteData[req.params.database]
+  completely wipes the specified database clean for the collections 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+More about features in our website:
+
+Search:
+  Our website includes a search feature which allows the user to make searches. The user is presented with a table. They are able to view a range of check boxes. If clicked, a input 
+  field (corresponding to its checkbox) will appear. From there the user can click our "search" button which will navigate them to the results page.
+
+Results:
+  The results page is where the user can see the results of the searches they performed. Our data is shown using a map with plotted points. The users are also permitted to save their 
+  searches by clicking on the "save search" button and then that search will be saved to their profile where they can view it at any time. On their profile, they are able to download
+  their searches/results.
+
+Map:
+  We include a d3 map which is used to display and visualize our map. If no filters are used on search, we show all percipitation points with all poweplant points. If we use our search 
+  checkboxes, our map will show all percipitation points with a limited amount of powerplant points relative to the search boxes.
+
+Cookies:
+  we used cookies to verify if a user is logged in or not. The cookie is created upon login and deleted upon logout. Also, we are allowed to get access to their username directly from
+  the cookie to perform previleged operations. 
+
+Security:
+  The existence of permission field in the login database is mainly used as a control switch for administrators, who are able to monitor user behavior (whether malicious or not) ability
+  to reduce information uncertainty, therefore enhancing security of this web app. All users' passwords are hashed using SHA-512(with salt) algorithm, adding an extra layer of security.
++==========================================================================================================================================================================================+
